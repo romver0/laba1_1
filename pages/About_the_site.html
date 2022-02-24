@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/About_the_site.css">
+        <title>Travel Landing Page </title>
+        <link rel="shortout icon" href="https://img.icons8.com/carbon-copy/100/000000/airport.png">
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <a href="#" class="logo"><h2 >Travel</h2></a>
+                <div class="toggle"></div>
+            </header>
+            <video src="../video/sea.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>О сайте</h2>
+            
+                <p>Сайт сделан для выполнения заданий по дисциплине WEB-программирование ЧГУ 2 курс.</p>
+
+                <p>Автор: Зверев Роман Евгеньевич, группа ИВТ-41-20.</p>
+
+                <p>Основной задачей данного проекта являлась демонстрация:</p>
+                <ol class="proba" type="1">
+                    <li>Умения работать с гипертекстовой раземткой HTML;</li>
+                    <li>Понимания принципов DOM и построения HTML документа;</li>
+                    <li>Умения создавать каскадные стилевые таблицы CSS, а именно:</li>
+                    <ul>
+                        <li>Создание качественного и красивого офоромления;</li>
+                        <li>Понимания правил CSS;</li>
+                        <li>Подстраивание стилевых правил под разные устройства (оптимизация);</li>
+                    </ul>
+                
+                    <li>Способности работать с Java Script, её библиотеками;</li>
+                    <li>Создания интерактива с помощью Java Script, дополнения возможностей не реализуемых стандартными средствами HTML и CSS.</li>
+                    <li>Вывод: ввиду уже имеющихся знаний по работе с вышеперечисленным, были закреплены уже полученные навыки, повторно пройден материал.</li>
+                </ol>
+            </div>
+
+            <ul class="social">
+                <li><a href="#"><img src="../img/social/facabook.png" alt="" width=25px></li></a>
+                <li><a href="#"><img src="../img/social/twitter.png" alt="" width=25px></li></a>
+                <li><a href="#"><img src="../img/social/instagram.png" alt="" width=25px></li></a>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="..">Home</a></li>
+                <li><a href="..">News</a></li>
+                <li><a href="..">Destignation</a></li>
+                <li><a href="..">Blog</a></li>
+                <li><a href="..">Contact</a></li>
+                <li><a href="#">About the site(ты тут)</a></li>
+            </ul>
+        </div>
+        <script>
+            const menu_Toggle=document.querySelector('.toggle')
+            const showcase=document.querySelector('.showcase')
+
+            menu_Toggle.addEventListener('click',function(){
+               menu_Toggle.classList.toggle('active')
+               showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
